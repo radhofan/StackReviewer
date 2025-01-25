@@ -92,14 +92,17 @@
             <button class="mt-6 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" on:click={generateTechStackInfo}>Generate Insights</button>  
             {/if}  
     
-            {#if generatedData}  
-            <div class="mt-6">  
-                <h3 class="text-xl font-bold mb-2">Generated Insights:</h3>  
-                <p class="font-semibold">Pros: {generatedData.pros}</p>  
-                <p class="font-semibold">Cons: {generatedData.cons}</p>  
-                <p class="font-semibold">Summary: {generatedData.summary}</p>  
-            </div>  
-            {/if}  
+            {#if generatedData}    
+                <div class="mt-6 p-4 bg-white rounded-lg shadow-md">    
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Generated Insights:</h3>    
+                    <div class="space-y-2">    
+                        <p class="font-semibold text-green-600">Pros: <span class="text-gray-700">{generatedData.pros}</span></p>    
+                        <p class="font-semibold text-red-600">Cons: <span class="text-gray-700">{generatedData.cons}</span></p>    
+                        <p class="font-semibold text-blue-600">Summary: <span class="text-gray-700">{generatedData.summary}</span></p>    
+                    </div>    
+                </div>    
+            {/if}    
+
     
             <button class="mt-6 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600" on:click={resetSelections}>Reset Selections</button>  
         </div>  
