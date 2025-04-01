@@ -20,7 +20,7 @@ Tech stack selection
 ![Stackreviewer image](images/image1.png)
 
 Model answer
-![Stackreviewer image](images/image1.png)
+![Stackreviewer image](images/image2.png)
 
 
 
